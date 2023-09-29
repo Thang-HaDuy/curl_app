@@ -3,14 +3,14 @@ const modalElement = document.getElementById("data-modal");
 
 //fetch api
 const dataapi = async () => {
-    const response = await fetch("http://localhost:8000/blogs");
+    const response = await fetch("http://localhost:3000/blogs");
     const data = await response.json();
     return data;
 }
 
 //fetch data detail
 const dataDetail = async (id) => {
-    const response = await fetch(`http://localhost:8000/blogs/${id}`);
+    const response = await fetch(`http://localhost:3000/blogs/${id}`);
     const data = await response.json();
     return data;
 }
@@ -125,7 +125,7 @@ const onUpdate = (id) => {
         content: valueContent
     };  
     const jsonData = JSON.stringify(data);   
-    fetch(`http://localhost:8000/blogs/${id}`, {
+    fetch(`http://localhost:3000/blogs/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
@@ -155,7 +155,7 @@ const onDelete = async (id) => {
 }
 
 const deleteYes = (id) => {
-    fetch(`http://localhost:8000/blogs/${id}`, {
+    fetch(`http://localhost:3000/blogs/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json"
