@@ -1,9 +1,9 @@
 # curl_app
 ## `I. Các bước cần làm:`
-### I.1 be
+### I.1 expressjs
 1. Clone code
 2. Chạy câu lệnh: npm i
-3. Chạy dự án: npm run dev
+3. Chạy dự án: npm start
 ### I.1 fe
 1. Clone code
 2. Mở VSCode
